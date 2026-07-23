@@ -14,7 +14,7 @@ async function loadSchedule() {
     matches.forEach(match => {
 
         html += `
-        <div class="match">
+        <div class="match schedule-card">
 
             <div class="team">
                 <strong>${match.Home}</strong>
@@ -27,7 +27,7 @@ async function loadSchedule() {
                 <br>
                 🕒 ${match.Masa}
                 <br>
-                📍 ${match.Venue}
+                
             </div>
 
         </div>
@@ -52,7 +52,7 @@ async function loadStanding() {
 
         const row = `
         <tr>
-            <td>${team.Team}</td>
+            <td>⚽ ${team.Team}</td>
             <td>${team.P}</td>
             <td>${team.W}</td>
             <td>${team.D}</td>
@@ -75,6 +75,7 @@ async function loadStanding() {
 
     document.getElementById("groupA").innerHTML = `
     <table>
+    <thead>
         <tr>
             <th>Team</th>
             <th>P</th>
@@ -83,12 +84,16 @@ async function loadStanding() {
             <th>L</th>
             <th>Pts</th>
         </tr>
+        </thead>
+<tbody>
         ${groupA}
+        </tbody>
     </table>
     `;
 
     document.getElementById("groupB").innerHTML = `
     <table>
+    <thead>
         <tr>
             <th>Team</th>
             <th>P</th>
@@ -97,7 +102,10 @@ async function loadStanding() {
             <th>L</th>
             <th>Pts</th>
         </tr>
+        </thead>
+<tbody>
         ${groupB}
+        </tbody>
     </table>
     `;
 

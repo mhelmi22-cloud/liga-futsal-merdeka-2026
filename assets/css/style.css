@@ -147,3 +147,48 @@ font-size:28px;
 }
 
 }
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+    font-size:14px;
+}
+
+thead{
+    background:#16284f;
+}
+
+th{
+    color:#FFD54F;
+    padding:12px 8px;
+    text-align:center;
+    font-weight:700;
+    border-bottom:2px solid rgba(255,255,255,.15);
+}
+
+td{
+    padding:12px 8px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+th:first-child,
+td:first-child{
+    text-align:center;
+    width:85%;
+    font-weight:600;
+}
+
+tr:hover{
+    background:rgba(255,255,255,.05);
+}
+.schedule-card{
+    margin-bottom:25px;
+    padding-bottom:18px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.schedule-card:last-child{
+    margin-bottom:0;
+    border-bottom:none;
+}
