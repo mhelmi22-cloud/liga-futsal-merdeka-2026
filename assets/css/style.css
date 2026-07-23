@@ -192,3 +192,21 @@ tr:hover{
     margin-bottom:0;
     border-bottom:none;
 }
+.hero{
+    width:100%;
+    background:#08152d;
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+}
+
+.hero-poster{
+
+    width:100%;
+    max-width:650px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+}
