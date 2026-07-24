@@ -2,6 +2,7 @@ window.onload = async () => {
 
     await loadSchedule();
     await loadStanding();
+    await loadResult();
 
 };
 
@@ -108,5 +109,53 @@ async function loadStanding() {
         </tbody>
     </table>
     `;
+
+}
+
+async function loadResult() {
+
+    const matches = await getResult();
+
+    let html = "";
+
+    matches.forEach(match => {
+
+        html += `
+        <div class="result-card">
+
+            <div class="ft">
+                FULL TIME
+            </div>
+
+            <div class="score">
+
+                <div>${match.Home}</div>
+
+                <div class="scoreline">
+
+                    ${match.HomeScore}
+                    -
+                    ${match.AwayScore}
+
+                </div>
+
+                <div>${match.Away}</div>
+
+            </div>
+
+            <div class="date">
+
+                ${match.Tarikh}
+                <br>
+                ${match.Masa}
+
+            </div>
+
+        </div>
+        `;
+
+    });
+
+    document.getElementById("resultList").innerHTML = html;
 
 }

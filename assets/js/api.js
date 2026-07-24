@@ -24,3 +24,11 @@ async function getMVP() {
     const response = await fetch(API_URL + "?action=mvp");
     return await response.json();
 }
+
+async function getResult() {
+
+    const response = await fetch(API_URL + "?action=result");
+
+    return await response.json();
+
+}
