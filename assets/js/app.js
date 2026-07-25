@@ -167,54 +167,58 @@ async function loadNextMatch() {
 
     const matches = await getSchedule();
 
-    const next = matches.find(match => match.Status != "FT");
+    const nextMatches = matches
+        .filter(match => match.Status != "FT")
+        .slice(0,5);
 
-    if (!next) {
+    if(nextMatches.length === 0){
 
         document.getElementById("nextMatch").innerHTML = `
-        <div class="next-card">
-            <h2>🏆 Semua Perlawanan Selesai</h2>
-        </div>
+            <div class="next-card">
+                <h2>🏆 Semua Perlawanan Selesai</h2>
+            </div>
         `;
 
         return;
 
     }
 
-    document.getElementById("nextMatch").innerHTML = `
+    let html = "";
 
-    <div class="next-card">
+    nextMatches.forEach(match => {
 
-        <div class="next-group">
-            Group ${next.Kumpulan}
+        html += `
+
+        <div class="schedule-card">
+
+            <div class="next-group">
+                Group ${match.Kumpulan}
+            </div>
+
+            <div class="next-date">
+                📅 ${match.Hari}, ${match.Tarikh}
+            </div>
+
+            <div class="next-time">
+                🕒 ${match.Masa}
+            </div>
+
+            <div class="next-teams">
+
+                <div>${match.Home}</div>
+
+                <div class="vs">VS</div>
+
+                <div>${match.Away}</div>
+
+            </div>
+
         </div>
 
-        <div class="next-date">
-            📅 ${next.Hari}, ${next.Tarikh}
-        </div>
+        `;
 
-        <div class="next-time">
-            🕒 ${next.Masa}
-        </div>
+    });
 
-        <div class="next-teams">
-
-            <div>${next.Home}</div>
-
-            <div class="vs">VS</div>
-
-            <div>${next.Away}</div>
-
-        </div>
-
-        <div class="next-status">
-
-            ⏳ Menunggu Sepakan Mula
-
-        </div>
-
-    </div>
-
-    `;
+    document.getElementById("nextMatch").innerHTML = html;
 
 }
