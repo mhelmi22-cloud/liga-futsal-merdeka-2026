@@ -127,19 +127,21 @@ async function loadResult() {
                 FULL TIME
             </div>
 
-            <div class="score">
+            <div class="result-teams">
 
-                <div>${match.Home}</div>
+    <div class="team-name">
+    ${match.Home}
+    </div>
 
-                <div class="scoreline">
+    <div class="scoreline">
+    ${match.HomeScore} – ${match.AwayScore}
+    </div>
 
-                    ${match.HomeScore} – ${match.AwayScore}
+    <div class="team-name">
+    ${match.Away}
+    </div>
 
-                </div>
-
-                <div>${match.Away}</div>
-
-            </div>
+</div>
 
             <div class="date">
 
