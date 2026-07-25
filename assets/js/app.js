@@ -203,13 +203,19 @@ async function loadNextMatch() {
                 🕒 ${match.Masa}
             </div>
 
-            <div class="next-teams">
+            <div class="next-match">
 
-                <div>${match.Home}</div>
+                <div class="home-team">
+                    ${match.Home}
+                </div>
 
-                <div class="vs">VS</div>
+                <div class="vs-center">
+                    VS
+                </div>
 
-                <div>${match.Away}</div>
+                <div class="away-team">
+                    ${match.Away}
+                </div>
 
             </div>
 
