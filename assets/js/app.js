@@ -195,12 +195,14 @@ async function loadNextMatch() {
                 Group ${match.Kumpulan}
             </div>
 
-            <div class="next-date">
-                📅 ${match.Hari}, ${match.Tarikh}
-            </div>
+            <div class="next-info">
 
-            <div class="next-time">
-                🕒 ${match.Masa}
+                <span>🕒 ${match.Masa}</span>
+
+                <span>•</span>
+
+                 <span>📅 ${match.Hari}, ${match.Tarikh}</span>
+
             </div>
 
             <div class="next-match">
