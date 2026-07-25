@@ -266,3 +266,65 @@ tr:hover{
     font-size:14px;
 
 }
+
+@media (max-width:768px){
+
+.result-card{
+
+    padding:28px;
+    margin-bottom:18px;
+    border-radius:18px;
+
+}
+
+.result-teams{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+
+}
+
+.team-name{
+
+    font-size:28px;
+    text-align:center;
+
+}
+
+.score{
+
+    font-size:54px;
+    line-height:1;
+
+}
+
+.result-date{
+
+    margin-top:18px;
+    text-align:center;
+
+}
+
+}
+
+.status-ft{
+
+    display:inline-block;
+
+    background:#ffd54a;
+
+    color:#1a2440;
+
+    padding:6px 18px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+
+}
