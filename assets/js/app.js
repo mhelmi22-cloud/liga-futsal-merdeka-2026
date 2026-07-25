@@ -133,9 +133,7 @@ async function loadResult() {
 
                 <div class="scoreline">
 
-                    ${match.HomeScore}
-                    -
-                    ${match.AwayScore}
+                    ${match.HomeScore} – ${match.AwayScore}
 
                 </div>
 
@@ -145,11 +143,13 @@ async function loadResult() {
 
             <div class="date">
 
-                ${match.Tarikh}
-                <br>
-                ${match.Masa}
+    📅 ${match.Hari}, ${match.Tarikh}
 
-            </div>
+    <br>
+
+    🕒 ${match.Masa}
+
+</div>
 
         </div>
         `;
