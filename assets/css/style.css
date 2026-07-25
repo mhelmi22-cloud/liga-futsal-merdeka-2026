@@ -205,13 +205,15 @@ tr:hover{
     background:rgba(255,255,255,.05);
 }
 .schedule-card{
-    padding:12px 0;
-    margin-bottom:12px;
-    border-bottom:1px solid rgba(255,255,255,.12);
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
 }
 
 .schedule-card:last-child{
-    margin-bottom:0;
     border-bottom:none;
 }
 .hero{
@@ -367,9 +369,35 @@ tr:hover{
 
     color:#ffd54a;
 
+    font-size:15px;
+
     font-weight:700;
 
-    font-size:18px;
+    text-transform:uppercase;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.next-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    color:#d8d8d8;
+
+    font-size:13px;
+
+    margin-bottom:16px;
 
 }
 
@@ -432,9 +460,7 @@ tr:hover{
 
     align-items:center;
 
-    gap:10px;
-
-    margin:12px 0;
+    gap:16px;
 
 }
 
@@ -442,9 +468,11 @@ tr:hover{
 
     text-align:right;
 
-    font-size:18px;
+    font-size:19px;
 
     font-weight:700;
+
+    line-height:1.3;
 
 }
 
@@ -452,9 +480,11 @@ tr:hover{
 
     text-align:left;
 
-    font-size:18px;
+    font-size:19px;
 
     font-weight:700;
+
+    line-height:1.3;
 
 }
 
@@ -466,6 +496,45 @@ tr:hover{
 
     font-weight:800;
 
-    padding:4px 10px;
+}
+
+@media(max-width:768px){
+
+    .schedule-card{
+
+        padding:16px 0;
+
+    }
+
+    .next-group{
+
+        font-size:14px;
+
+        margin-bottom:8px;
+
+    }
+
+    .next-info{
+
+        font-size:12px;
+
+        margin-bottom:14px;
+
+        gap:8px;
+
+    }
+
+    .home-team,
+    .away-team{
+
+        font-size:17px;
+
+    }
+
+    .vs-center{
+
+        font-size:17px;
+
+    }
 
 }
