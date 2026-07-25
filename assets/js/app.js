@@ -3,6 +3,7 @@ window.onload = async () => {
     await loadSchedule();
     await loadStanding();
     await loadResult();
+    await loadNextMatch();
 
 };
 
@@ -159,5 +160,61 @@ async function loadResult() {
     });
 
     document.getElementById("resultList").innerHTML = html;
+
+}
+
+async function loadNextMatch() {
+
+    const matches = await getSchedule();
+
+    const next = matches.find(match => match.Status != "FT");
+
+    if (!next) {
+
+        document.getElementById("nextMatch").innerHTML = `
+        <div class="next-card">
+            <h2>🏆 Semua Perlawanan Selesai</h2>
+        </div>
+        `;
+
+        return;
+
+    }
+
+    document.getElementById("nextMatch").innerHTML = `
+
+    <div class="next-card">
+
+        <div class="next-group">
+            Group ${next.Kumpulan}
+        </div>
+
+        <div class="next-date">
+            📅 ${next.Hari}, ${next.Tarikh}
+        </div>
+
+        <div class="next-time">
+            🕒 ${next.Masa}
+        </div>
+
+        <div class="next-teams">
+
+            <div>${next.Home}</div>
+
+            <div class="vs">VS</div>
+
+            <div>${next.Away}</div>
+
+        </div>
+
+        <div class="next-status">
+
+            ⏳ Menunggu Sepakan Mula
+
+        </div>
+
+    </div>
+
+    `;
 
 }

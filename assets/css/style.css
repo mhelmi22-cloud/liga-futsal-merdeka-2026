@@ -352,3 +352,75 @@ tr:hover{
     margin-bottom:20px;
 
 }
+
+.next-card{
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+.next-group{
+
+    color:#ffd54a;
+
+    font-weight:700;
+
+    font-size:18px;
+
+}
+
+.next-date{
+
+    margin-top:12px;
+
+    font-size:16px;
+
+}
+
+.next-time{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin:8px 0 20px;
+
+}
+
+.next-teams{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    line-height:1.4;
+
+}
+
+.vs{
+
+    color:#ffd54a;
+
+    margin:12px 0;
+
+}
+
+.next-status{
+
+    margin-top:25px;
+
+    display:inline-block;
+
+    background:#ffd54a;
+
+    color:#102247;
+
+    padding:8px 22px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+}
