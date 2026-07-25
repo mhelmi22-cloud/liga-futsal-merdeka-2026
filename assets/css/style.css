@@ -52,31 +52,46 @@ body{
 
 nav{
 
+    position:sticky;
+    top:0;
+    z-index:999;
+
     display:flex;
-
     justify-content:center;
+    align-items:center;
+    gap:28px;
 
-    gap:20px;
+    background:rgba(16,34,71,.95);
+    backdrop-filter:blur(12px);
 
-    background:#102247;
+    padding:14px 18px;
 
-    padding:18px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 5px 18px rgba(0,0,0,.35);
 
 }
 
+
 nav a{
 
-    color:white;
+    color:#ffffff;
 
     text-decoration:none;
 
     font-weight:600;
 
+    font-size:15px;
+
+    transition:.25s;
+
+    white-space:nowrap;
+
 }
 
 nav a:hover{
 
-    color:#ffd54a;
+    color:#FFD54A;
 
 }
 
