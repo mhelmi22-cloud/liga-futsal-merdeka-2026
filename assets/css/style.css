@@ -132,11 +132,25 @@ footer{
 
 }
 
-.result-card
-.result-teams
-.team-name
-.scoreline
-.result-date
+.result-card{
+
+}
+
+.result-teams{
+
+}
+
+.team-name{
+
+}
+
+.scoreline{
+
+}
+
+.result-date{
+
+}
 
 @media(max-width:768px){
 
@@ -145,6 +159,8 @@ footer{
 grid-template-columns:1fr;
 
 }
+
+
 
 .hero h2{
 
