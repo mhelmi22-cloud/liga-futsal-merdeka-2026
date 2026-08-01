@@ -50,29 +50,34 @@ async function loadStanding() {
 
     teams.forEach(team => {
 
-        const row = `
-        <tr>
+        let rankDisplay = team.Rank;
 
-            <td class="team-name">⚽ ${team.Team}</td>
+if (team.Rank == 1)
+    rankDisplay = '<span class="medal gold">🥇</span>';
+else if (team.Rank == 2)
+    rankDisplay = '<span class="medal silver">🥈</span>';
+else if (team.Rank == 3)
+    rankDisplay = '<span class="medal bronze">🥉</span>';
+}
 
-            <td>${team.P}</td>
+const row = `
+<tr>
+    <td class="rank">${rankDisplay}</td>
 
-            <td>${team.W}</td>
+    <td class="team-name">⚽ ${team.Team}</td>
 
-            <td>${team.D}</td>
+    <td>${team.P}</td>
+    <td>${team.W}</td>
+    <td>${team.D}</td>
+    <td>${team.L}</td>
 
-            <td>${team.L}</td>
+    <td>${team.GF}</td>
+    <td>${team.GA}</td>
+    <td>${team.GD}</td>
 
-            <td>${team.GF}</td>
-
-            <td>${team.GA}</td>
-
-            <td>${team.GD}</td>
-
-            <td class="pts">${team.Pts}</td>
-
-        </tr>
-        `;
+    <td class="pts">${team.Pts}</td>
+</tr>
+`;
 
         if (team.Group == "A") {
 
@@ -245,4 +250,10 @@ async function loadNextMatch() {
 
     document.getElementById("nextMatch").innerHTML = html;
 
+}
+
+.rank{
+    width:45px;
+    text-align:center;
+    font-size:22px;
 }

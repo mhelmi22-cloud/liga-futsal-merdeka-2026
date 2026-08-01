@@ -591,3 +591,19 @@ tr:hover{
     font-weight:800;
     color:#FFD54F;
 }
+
+.medal{
+    font-size:22px;
+}
+
+.gold{
+    filter: drop-shadow(0 0 6px gold);
+}
+
+.silver{
+    filter: drop-shadow(0 0 5px silver);
+}
+
+.bronze{
+    filter: drop-shadow(0 0 5px #cd7f32);
+}
