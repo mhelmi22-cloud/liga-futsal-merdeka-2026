@@ -553,3 +553,14 @@ tr:hover{
     }
 
 }
+
+.team-name{
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.pts{
+    font-weight:700;
+    color:#FFD54F;
+    font-size:17px;
+}

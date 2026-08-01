@@ -53,14 +53,20 @@ async function loadStanding() {
     teams.forEach(team => {
 
         const row = `
-        <tr>
-            <td>⚽ ${team.Team}</td>
-            <td>${team.P}</td>
-            <td>${team.W}</td>
-            <td>${team.D}</td>
-            <td>${team.L}</td>
-            <td>${team.Pts}</td>
-        </tr>
+    <tr>
+        <td class="team-name">⚽ ${team.Team}</td>
+
+        <td>${team.P}</td>
+        <td>${team.W}</td>
+        <td>${team.D}</td>
+        <td>${team.L}</td>
+
+        <td>${team.GF}</td>
+        <td>${team.GA}</td>
+        <td>${team.GD}</td>
+
+        <td class="pts">${team.Pts}</td>
+    </tr>
         `;
 
         if (team.Group == "A") {
@@ -84,6 +90,9 @@ async function loadStanding() {
             <th>W</th>
             <th>D</th>
             <th>L</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
             <th>Pts</th>
         </tr>
         </thead>
