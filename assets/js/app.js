@@ -44,8 +44,6 @@ async function loadSchedule() {
 async function loadStanding() {
 
     const teams = await getStanding();
-    
-    console.log(teams);
 
     let groupA = "";
     let groupB = "";
@@ -53,20 +51,27 @@ async function loadStanding() {
     teams.forEach(team => {
 
         const row = `
-    <tr>
-        <td class="team-name">⚽ ${team.Team}</td>
+        <tr>
 
-        <td>${team.P}</td>
-        <td>${team.W}</td>
-        <td>${team.D}</td>
-        <td>${team.L}</td>
+            <td class="team-name">⚽ ${team.Team}</td>
 
-        <td>${team.GF}</td>
-        <td>${team.GA}</td>
-        <td>${team.GD}</td>
+            <td>${team.P}</td>
 
-        <td class="pts">${team.Pts}</td>
-    </tr>
+            <td>${team.W}</td>
+
+            <td>${team.D}</td>
+
+            <td>${team.L}</td>
+
+            <td>${team.GF}</td>
+
+            <td>${team.GA}</td>
+
+            <td>${team.GD}</td>
+
+            <td class="pts">${team.Pts}</td>
+
+        </tr>
         `;
 
         if (team.Group == "A") {
@@ -81,47 +86,49 @@ async function loadStanding() {
 
     });
 
-    document.getElementById("groupA").innerHTML = `
-    <table>
-    <thead>
-        <tr>
-            <th>Team</th>
-            <th>P</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>GF</th>
-            <th>GA</th>
-            <th>GD</th>
-            <th>Pts</th>
-        </tr>
-        </thead>
-<tbody>
-        ${groupA}
-        </tbody>
-    </table>
+    const table = (rows) => `
+        <table class="standing-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Team</th>
+
+                    <th>P</th>
+
+                    <th>W</th>
+
+                    <th>D</th>
+
+                    <th>L</th>
+
+                    <th>GF</th>
+
+                    <th>GA</th>
+
+                    <th>GD</th>
+
+                    <th class="pts-header">Pts</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                ${rows}
+
+            </tbody>
+
+        </table>
     `;
 
-    document.getElementById("groupB").innerHTML = `
-    <table>
-    <thead>
-        <tr>
-            <th>Team</th>
-            <th>P</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>Pts</th>
-        </tr>
-        </thead>
-<tbody>
-        ${groupB}
-        </tbody>
-    </table>
-    `;
+    document.getElementById("groupA").innerHTML = table(groupA);
+
+    document.getElementById("groupB").innerHTML = table(groupB);
 
 }
-
 async function loadResult() {
 
     const matches = await getResult();

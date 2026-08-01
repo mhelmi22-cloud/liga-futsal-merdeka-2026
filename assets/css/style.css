@@ -564,3 +564,30 @@ tr:hover{
     color:#FFD54F;
     font-size:17px;
 }
+
+.standing-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.standing-table th,
+.standing-table td{
+    text-align:center;
+    padding:10px 6px;
+}
+
+.standing-table th:first-child,
+.standing-table td:first-child{
+    text-align:left;
+}
+
+.team-name{
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.pts,
+.pts-header{
+    font-weight:800;
+    color:#FFD54F;
+}
