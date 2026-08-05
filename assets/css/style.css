@@ -607,3 +607,41 @@ tr:hover{
 .bronze{
     filter: drop-shadow(0 0 5px #cd7f32);
 }
+
+.rank,
+.rank-header{
+    width:42px;
+    text-align:center;
+}
+
+.rank{
+    font-size:21px;
+}
+
+.medal{
+    display:inline-block;
+    font-size:22px;
+}
+
+.gold{
+    filter:drop-shadow(0 0 5px rgba(255,215,0,.7));
+}
+
+.silver{
+    filter:drop-shadow(0 0 5px rgba(220,220,220,.65));
+}
+
+.bronze{
+    filter:drop-shadow(0 0 5px rgba(205,127,50,.65));
+}
+
+.pts,
+.pts-header{
+    color:#ffd54a;
+    font-weight:800;
+    font-size:17px;
+}
+
+.standing-table .stat-divider{
+    border-right:1px solid rgba(255,255,255,.18);
+}
