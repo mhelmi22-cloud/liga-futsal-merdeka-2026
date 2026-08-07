@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Chant Muay Selangor - SUKMA 2026 | Dato Fairus Cup</title>
+
+<link rel="icon" href="../assets/images/logo.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#2a0a12;
+    background:linear-gradient(180deg,#320c15,#1c0710 400px,#1c0710);
+    color:#ffffff;
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+}
+
+.header-banner{
+    width:100%;
+    display:block;
+}
+
+.header-banner img{
+    width:100%;
+    display:block;
+}
+
+.subheader{
+    text-align:center;
+    padding:16px 16px 8px;
+    color:#f0c9a0;
+    font-size:13px;
+    letter-spacing:.5px;
+}
+
+/* ===== QUICK NAV ===== */
+
+.quicknav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:rgba(28,7,16,.96);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.1);
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
+    padding:10px 14px;
+}
+
+.quicknav-inner{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    max-width:640px;
+    margin:0 auto;
+}
+
+.quicknav-inner::-webkit-scrollbar{
+    display:none;
+}
+
+.quicknav a{
+    flex:0 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    background:#4a121c;
+    border:1px solid rgba(255,255,255,.12);
+    color:#ffd54a;
+    font-weight:800;
+    font-size:14px;
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.quicknav a:active{
+    background:#c81e3a;
+    color:#fff;
+}
+
+/* ===== TITLE LIST ===== */
+
+.title-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    max-width:640px;
+    margin:0 auto 26px;
+    padding:0 16px;
+}
+
+.title-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:linear-gradient(180deg,#4a121c,#3a0f18);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:16px 18px;
+    text-decoration:none;
+    color:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    -webkit-tap-highlight-color:transparent;
+}
+
+.title-item:active{
+    background:#5a1826;
+}
+
+.title-item .t-num{
+    color:#ffd54a;
+    font-weight:800;
+    font-size:15px;
+    min-width:22px;
+}
+
+.title-item .t-name{
+    flex:1;
+    font-weight:600;
+    font-size:16px;
+}
+
+.title-item .t-arrow{
+    color:#ffd54a;
+    font-size:20px;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:24px 16px 60px;
+}
+
+.chant-section{
+    scroll-margin-top:66px;
+    margin-bottom:34px;
+}
+
+.chant-card{
+    background:linear-gradient(180deg,#4a121c,#3a0f18);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:26px 18px;
+    box-shadow:0 8px 24px rgba(0,0,0,.45);
+}
+
+.chant-num-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:#ffd54a;
+    color:#2a0a12;
+    font-weight:800;
+    font-size:14px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin-bottom:12px;
+}
+
+.chant-card h2{
+    color:#ffd54a;
+    font-size:22px;
+    line-height:1.35;
+    margin-bottom:18px;
+    text-shadow:0 2px 6px rgba(0,0,0,.4);
+}
+
+.lyrics{
+    white-space:pre-line;
+    line-height:2;
+    font-size:22px;
+    font-weight:700;
+    text-align:center;
+    letter-spacing:.3px;
+    text-shadow:0 2px 8px rgba(0,0,0,.55);
+    color:#ffffff;
+}
+
+.top-btn-wrap{
+    text-align:center;
+    margin-top:22px;
+}
+
+.top-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#c81e3a;
+    color:#fff;
+    border:none;
+    padding:11px 22px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    font-family:inherit;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(200,30,58,.4);
+}
+
+.top-btn:active{
+    background:#a5182e;
+}
+
+@media(min-width:700px){
+    .lyrics{
+        font-size:24px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header-banner">
+    <img src="../assets/images/chant-header.jpg" alt="Chant Muay Selangor - SUKMA Selangor 2026 - Sorak Sampai Serak">
+</div>
+
+<p class="subheader">Scroll ke bawah untuk semua chant, atau tekan tajuk untuk lompat terus</p>
+
+<div class="title-list">
+    <a class="title-item" href="#chant-1"><span class="t-num">1)</span><span class="t-name">Intro Penyokong</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-2"><span class="t-num">2)</span><span class="t-name">Kami Datang Lagi</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-3"><span class="t-num">3)</span><span class="t-name">Bantai Sampai Mati</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-4"><span class="t-num">4)</span><span class="t-name">Selangor Sampai Mati</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-5"><span class="t-num">5)</span><span class="t-name">Manggisku Coba</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-6"><span class="t-num">6)</span><span class="t-name">We Love Selangor</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-7"><span class="t-num">7)</span><span class="t-name">Barisan Kita (Selangor)</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-8"><span class="t-num">8)</span><span class="t-name">Enjit-Enjit Semut</span><span class="t-arrow">&rsaquo;</span></a>
+    <a class="title-item" href="#chant-9"><span class="t-num">9)</span><span class="t-name">Aspalela</span><span class="t-arrow">&rsaquo;</span></a>
+</div>
+
+<div id="nav-anchor"></div>
+
+<nav class="quicknav" id="quicknav">
+    <div class="quicknav-inner">
+        <a href="#chant-1">1</a>
+        <a href="#chant-2">2</a>
+        <a href="#chant-3">3</a>
+        <a href="#chant-4">4</a>
+        <a href="#chant-5">5</a>
+        <a href="#chant-6">6</a>
+        <a href="#chant-7">7</a>
+        <a href="#chant-8">8</a>
+        <a href="#chant-9">9</a>
+    </div>
+</nav>
+
+<div class="wrap" id="chantList">
+
+    <section class="chant-section" id="chant-1">
+        <div class="chant-card">
+            <span class="chant-num-badge">1</span>
+            <h2>Intro Penyokong</h2>
+            <div class="lyrics">LO LO LO LO LO LO 13X (SLOW)
+LO LO LO LO LO LO 12X (RANCAK)
+HOOOOOOO......
+HO HO HO
+HO HOOOO HOOOOOOOOO
+HO HOOOO HOOOOOOOOO
+MUAY SELANGOR
+
+LO LO LO LO LO LO 13X (SLOW)
+LO LO LO LO LO LO 12X (RANCAK)
+HOOOOOOO......
+HO HO HO
+HO HOOOO HOOOOOOOOO
+HO HOOOO HOOOOOOOOO
+MUAY SELANGOR
+
+LO LO LO LO LO LO 13X (SLOW)
+LO LO LO LO LO LO 12X (RANCAK)
+HOOOOOOO......
+HO HO HO
+HO HOOOO HOOOOOOOOO
+HO HOOOO HOOOOOOOOO
+MUAY SELANGOR
+
+HOOOOOOO......
+HO HO HO
+HO HOOOO HOOOOOOOOO
+HO HOOOO HOOOOOOOOO
+MUAY SELANGOR</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-2">
+        <div class="chant-card">
+            <span class="chant-num-badge">2</span>
+            <h2>Kami Datang Lagi</h2>
+            <div class="lyrics">ALE ALE ALE 4X
+KAMI DATANG LAGI
+KAMI SIAP BERJUANG LAGI
+KAU TERUS BERLARI
+PASTI MENANG HARI INI
+
+1 JIWA 1 HATI
+KAMI DATANG TUNAI JANJI
+1 NAMA BAWAH PANJI
+SELANGOR HARGA MATI
+
+FORZA GRANDE SELANGOR ALE
+GIALO ROSSO PER SEMPRE
+FORZA GRANDE SELANGOR ALE
+SELANGOR KAMI SAMPAI MATI
+
+(ULANG 2 KALI)</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-3">
+        <div class="chant-card">
+            <span class="chant-num-badge">3</span>
+            <h2>Bantai Sampai Mati</h2>
+            <div class="lyrics">GERGASI MERAHKU
+HANCURKAN LAWANMU
+MUSUHMU KAU PALU
+BANTAI SAMPAI MATI
+SEKUNING DAULATKU
+SEMERAH DARAHKU
+MUSUHMU KAU PALU
+BANTAI SAMPAI MATI
+
+HAA OLE OLE OLE OLE
+HAA OLE HA OLE
+OLE OLE OLE
+
+SIAPA BERANI
+LANGKAH MAYAT KAMI
+MUSUH KAMI PALU BANTAI SAMPAI MATI
+
+HAA OLE OLE OLE OLE
+HAA OLE HA OLE
+OLE OLE OLE</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-4">
+        <div class="chant-card">
+            <span class="chant-num-badge">4</span>
+            <h2>Selangor Sampai Mati</h2>
+            <div class="lyrics">WALAU PANAS MATAHARI
+WALAU HUJAN TURUN LAGI
+KAMI SETIA PENYOKONG SELANGOR
+BEGINILAH PENYOKONG SELANGOR
+
+TAK KENAL LELAH
+PANTANG MENYERAH
+HADAPILAH LAWANMU
+MERAH KUNING SEJATI
+TAK KAN BERHENTI
+SELANGOR SAMPAI MATI !
+OOOO OOOO OOO OOOO
+OOOO OOO OOO
+SELANGOR SAMPAI MATI
+
+WALAU PANAS MATAHARI
+WALAU HUJAN TURUN LAGI
+KAMI SETIA PENYOKONG SELANGOR
+BEGINILAH PENYOKONG SELANGOR</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-5">
+        <div class="chant-card">
+            <span class="chant-num-badge">5</span>
+            <h2>Manggisku Coba</h2>
+            <div class="lyrics">KU COBA COBA MELEMPAR MANGGIS
+MANGGIS KU LEMPAR, MANGGA KU DAPAT
+SHA LA LA LA LA LA LA
+KU COBA, COBA MELAMAR GADIS
+GADIS KU LAMAR, JANDA KU DAPAT!
+
+(3X ULANG)
+SELANGOR SELANGOR OH SELANGOR
+UI UI UI
+SUNGGUH HEBAT SELANGOR KITA
+LA LA LA LA LA LA LA
+SEKARANG SELANGOR MENANG
+OH SELANGORRR JUARA SUKMA</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-6">
+        <div class="chant-card">
+            <span class="chant-num-badge">6</span>
+            <h2>We Love Selangor</h2>
+            <div class="lyrics">WE LOVE SELANGOR, WE DO 3X
+SELANGOR WE LOVE YOU !
+
+DI SINI, KAMI BERDIRI
+MENYANYIKAN LAGU ISI HATI
+MENGAWAL SELANGOR BERAKSI
+KEBANGGAAN INI KAU HORMATI
+
+AYUH SELANGOR, WARNA INI
+JANGANLAH KAU KHIANATI
+KAMI DISINI TAKKAN BERHENTI
+SELANGOR KAMI SAMPAI MATI
+
+WE LOVE SELANGOR, WE DO 3X
+SELANGOR WE LOVE YOU !</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-7">
+        <div class="chant-card">
+            <span class="chant-num-badge">7</span>
+            <h2>Barisan Kita (Selangor)</h2>
+            <div class="lyrics">INILAH BARISAN KITA, YANG IKHLAS BERJUANG
+SIAP SEDIA BERKORBAN, UNTUK IBU PERTIWI
+SEBELUM KITA BERJAYA, JANGAN HARAP KAMI PULANG
+INILAH SUMPAH PENDEKAR KITA, MENUJU MEDAN BAKTI
+
+ANDAI KATA KAMI GUGUR SEMUA,
+TABURLAH BUNGA DI ATAS PUSARA,
+KAMI MOHON DOA, SELANGOR BERJAYA,
+SEMBOYAN TELAH BERBUNYI, MENUJU MEDAN BAKTI.
+
+SELANGOR,
+SELANGOR,
+SELANGOR...</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-8">
+        <div class="chant-card">
+            <span class="chant-num-badge">8</span>
+            <h2>Enjit-Enjit Semut</h2>
+            <div class="lyrics">(3X ULANG)
+ENJIT-ENJIT SEMUT, SIAPA SAKIT BOLEH BALIK
+ENJIT-ENJIT SEMUT, SIAPA SAKIT BOLEH BALIK
+ENJIT-ENJIT SEMUT, SIAPA SAKIT BOLEH BALIK
+ENJIT-ENJIT SEMUT, SIAPA SAKIT BOLEH BALIK</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+    <section class="chant-section" id="chant-9">
+        <div class="chant-card">
+            <span class="chant-num-badge">9</span>
+            <h2>Aspalela</h2>
+            <div class="lyrics">INGAT TAK LAGI JANJI KITA DULU ASPALELA
+KAU DAN AKU AKAN BERSAMA SAMPAI KE HARI TUA
+TAPI SAYANG JANJI ITU DIRAMPAS ORANG KETIGA
+OH ASPALELA JANGAN BUAT KU KECEWA
+
+SAMPAI HATI KAU PERGI KEPADANYA
+MAKAN HATIKU BILA KAU BERKATA
+PATAH HATI DENGAN HUBUNGAN KITA
+HANCUR HATIKU ASPALELA
+
+TERPISAH KERNA TERPAKSA AKUR DESAKAN KELUARGA
+KU SEDAR BUKAN KEHENDAKMU TAPI APAKAN DAYA
+ADAKAH LAGI HARAPAN UNTUK KITA BERSAMA
+OH ASPALELA APA SYARAT PUN KU TERIMA
+
+SAMPAI HATI KAU PERGI KEPADANYA
+MAKAN HATIKU BILA KAU BERKATA
+PATAH HATI DENGAN HUBUNGAN KITA
+HANCUR HATIKU ASPALELA
+
+OH LELA LELA LELA LELA
+OH OH OH OH LELA LELA LELA
+OH OH LELA LELA LELA
+OH OH OH OH LELA LELA LELA
+
+ADAKAH LAGI PELUANG KITA UNTUK BERSAMA
+OH ASPALELA JANGAN TINGGALKAN KU SAYANG
+SAMPAI HATI KAU PERGI KEPADANYA
+MAKAN HATIKU BILA KAU BERKATA
+PATAH HATI DENGAN HUBUNGAN KITA
+HANCUR HATIKU ASPALELA
+
+LELA LELA LELA LELA LELA
+LELA LELA LELA LELA LELA
+LELA LELA LELA LELA LELA
+LELA LELA ASPALELA</div>
+        </div>
+        <div class="top-btn-wrap">
+            <button class="top-btn" onclick="backToNav()">&uarr; Kembali ke Atas</button>
+        </div>
+    </section>
+
+</div>
+
+<script>
+
+function backToNav(){
+    const anchor = document.getElementById('nav-anchor');
+    const targetY = anchor.offsetTop;
+    window.scrollTo({ top: Math.max(targetY, 0), behavior: 'smooth' });
+}
+
+</script>
+
+</body>
+</html>
