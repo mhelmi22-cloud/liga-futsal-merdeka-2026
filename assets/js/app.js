@@ -150,7 +150,7 @@ async function loadNextMatch() {
 
     const nextMatches = matches
         .filter((match) => match.Status !== "FT")
-        .slice(0, 5);
+        .slice(0, 8);
 
     if (nextMatches.length === 0) {
         document.getElementById("nextMatch").innerHTML = `
